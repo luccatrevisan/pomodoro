@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <title>Pomodoro</title>
+</head>
+<body>
+    <header>
+        <form>
+            <label for="ciclo">Ciclos</label>
+            <select name="ciclo" id="ciclo">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select>
+
+            <label for="hora">Horas</label>
+            <select name="hora" id="hora">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </form>
+    </header>
+    <main>
+        <h1>[CICLO ATUAL]</h1>
+        <p>[tempo restante]</p>
+        <button>Start</button>
+        <section class="container-status">
+            <div class="item-status" id="active"><p>FOQUE</p></div>
+            <div class="item-status"><p>DESCANSE</p></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
